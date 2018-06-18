@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>爱情的小火车</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+       .box1{
+            width: 900px; /*定义界面的大小*/
+            height: 900px;
+            margin: 0 auto;
+            border: 1px solid black;
+            margin-top: 20px;
+           background-color: skyblue;
+            background-size: cover;
+            position: relative;
+           overflow: hidden;
+        }
+       .box2{
+           width: 900px;
+           height: 400px;
+           background-color: white;
+           position: absolute;
+           top: 0px;
+           left: 0px;
+       }
+        img{
+            width: 250px;
+            height: 100px;
+            position: absolute;
+            left: -250px;
+            bottom: 0px;
+            animation: ly 5s linear 0s infinite normal;
+        }
+        ul{
+            width: 900px;
+            height: 200px;
+            position: relative;
+            left: 0px;
+            top: 100px;
+        }
+        ul li{
+            list-style: none;
+            position: absolute;
+            width: 100px;
+            height: 200px;
+            text-align: center;
+            line-height: 200px;
+            font-size: 30px;
+            color: blue;
+        }
+        a{
+            width: 200px;
+            height: 100px;
+            position: absolute;
+            top: 800px;
+            left: 30px;
+            font-size: 30px;
+        }
+        a:link{
+            color: purple;
+        }
+        a:visited{
+            color: purple;
+        }
+        a:active{
+            color: yellow;
+        }
+        a:hover{
+            color: yellow;
+        }
+        a{
+            text-decoration: none;
+        }
+        ul li:nth-child(1){
+            left: 30px;
+
+        }
+        ul li:nth-child(2){
+            left: 400px;
+            font-size: 80px;
+            top: 5px;
+        }
+        ul li:nth-child(3){
+           left:750px;
+        }
+        ul li:nth-child(4){
+            background-color: white;
+            left: 400px;
+            top: 110px;
+            height: 15px;
+        }
+        @keyframes ly{
+            from{
+                left: -250px;
+            }
+            to{
+                left: 900px;
+            }
+        }
+    </style>
+</head>
+<body>
+      <div class="box1">
+          <div class="box2">
+              <img src="bg3.jpg" alt="">
+          </div>
+          <ul>
+              <li>相&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;识</li>
+              <li>➡</li>
+              <li>一&nbsp;&nbsp;辈&nbsp;&nbsp;子</li>
+              <li></li>
+          </ul>
+          <a href="index.html">点我返回</a>
+      </div>
+</body>
+</html>

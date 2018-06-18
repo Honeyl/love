@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>送给亲爱的你</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            width: 900px;
+            height: 900px;
+            margin: 0 auto;
+            border: 1px solid black;
+            margin-top: 20px;
+            background-image: url("bg5.jpg");/*定义背景图片是属性*/
+            background-size: cover;
+            overflow: hidden;
+            position: relative;
+        }
+        ul{/*定义旋转的整体属性*/
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            top: 500px;
+            left: 180px;
+            transform-style: preserve-3d;
+            animation: ly 6s linear 0s infinite;
+        }
+        ul li{/*定义每一个li的属性值*/
+            list-style: none;
+            width: 200px;
+            height: 200px;
+            font-size: 60px;
+            line-height: 200px;
+            text-align: center;
+            position: absolute;
+            background-color: black;
+        }
+        ul li img{/*定义照片的大小*/
+            width: 200px;
+            height: 200px;
+            border: 5px solid skyblue;
+            box-sizing: border-box;
+        }
+        span{
+            color: red;
+            font-size: 100px;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            left: 90px;
+            top: 550px;
+            animation: move 10s linear 0s infinite normal;
+            transform: rotate(15deg);
+        }/*第一个心心*/
+        audio{
+            opacity: 0;
+            position: absolute;
+            top:850px;
+        }
+        a{
+            width: 200px;
+            height: 100px;
+            position: absolute;
+            top: 800px;
+            left: 50px;
+            font-size: 30px;
+        }
+        a:link{
+            color: purple;
+        }
+        a:visited{
+            color: purple;
+        }
+        a:active{
+            color: yellow;
+        }
+        a:hover{
+            color: yellow;
+        }
+        a{
+            text-decoration: none;
+        }
+        ul li:nth-child(1){
+            transform: rotateY(60deg) translateZ(200px);
+        }/*照片的布局*/
+        ul li:nth-child(2){
+            transform: rotateY(120deg) translateZ(200px);
+        }
+        ul li:nth-child(3){
+            transform: rotateY(180deg) translateZ(200px);
+        }
+        ul li:nth-child(4){
+            transform: rotateY(240deg) translateZ(200px);
+        }
+        ul li:nth-child(5){
+            transform: rotateY(300deg) translateZ(200px);
+        }
+        ul li:nth-child(6){
+            transform: rotateY(360deg) translateZ(200px);
+        }
+        @keyframes ly {
+            from {
+                transform: rotateX(-15deg) rotateY(0deg);
+            }
+            to {
+                transform: rotateX(-15deg) rotateY(360deg);
+            }
+        }/*照片的旋转*/
+        @keyframes move {
+            0% {
+                left: 90px;
+                top: 550px;
+                opacity: 1;
+            }
+            20% {
+                left: 250px;
+                top: 400px;
+                opacity: 0;
+            }
+            40% {
+                left: 350px;
+                top: 80px;
+                opacity: 1;
+            }
+            60% {
+                left: 700px;
+                top: 180px;
+                opacity: 0;
+            }
+            80%{
+                left:600px;
+                top: 400px;
+                opacity: 1;
+            }
+            90%{
+                left: 400px;
+                top: 600px;
+                opacity: 0;
+            }
+            95%{
+                left: 300px;
+                top: 700px;
+                opacity:0;
+            }
+           100%{
+                left: 150px;
+                top: 800px;
+                opacity: 1;
+            }
+        }/*第一颗心心的运动*/
+        ul:hover{
+            animation-play-state: paused;
+        }
+        ul:hover li img{
+            opacity: 0.5;
+        }
+        ul li:hover img{
+            opacity: 1;
+            transform: scale(1.2, 1.2)
+        }/*对照片一hover的时候，照片的显示属性*/
+    </style>
+</head>
+<body>
+ <div>
+     <ul>
+    <li><img src="boy1.jpg" alt=""></li>
+    <li><img src="boy2.jpg" alt=""></li>
+    <li><img src="boy3.jpg" alt=""></li>
+    <li><img src="boy4.jpg" alt=""></li>
+    <li><img src="boy5.jpg" alt=""></li>
+    <li><img src="boy6.jpg" alt=""></li>
+</ul>
+<audio controls="controls" autoplay="autoplay" loop="loop">
+    <source src="mp2.mp3" type="audio/mp3g">
+</audio>
+<span>❤</span>
+     <a href="index.html">点我返回</a>
+ </div>
+</body>
+</html>

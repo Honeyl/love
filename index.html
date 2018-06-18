@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>送给亲爱的你</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+         .box1{
+            width: 900px;   /*定义界面的大小*/
+            height: 900px;
+            margin: 0 auto;
+            border: 1px solid black;
+            margin-top: 20px;
+            background-image: url("bg1.jpg");
+            background-size: cover;
+             position: relative;
+        }
+      .box2{
+            width: 900px;
+            height: 150px;
+            text-align: center;
+            font-size: 50px;
+            line-height: 150px;
+        }
+      span{
+            margin-left: 10px;
+            font-family: "华文隶书";
+            font-size: 55px;
+        }
+        ul{
+            width: 900px;
+            height: 900px;
+            position: relative;
+        }
+        ul li{
+            width: 300px;
+            height: 70px;
+            color: yellow;
+            border: 1px solid black;
+            text-align: center;
+            line-height: 70px;
+            position: absolute;
+            background-color: pink;
+            font-size: 50px;
+        }
+        a:link{
+            color: purple;
+        }
+        a:visited{
+            color: purple;
+        }
+        a:active{
+            color: yellow;
+        }
+        a:hover{
+            color: yellow;
+        }
+        a{
+            text-decoration: none;
+        }
+        .box3 {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            color: red;
+            font-size: 150px;
+            left: 450px;
+            top: 700px;
+            transform: rotate(-15deg);
+            opacity: 0.7;
+        }
+        .box4{
+            position: absolute;
+            left: 80px;
+            top: 700px;
+            font-size: 100px;
+            transform: rotate(15deg);
+            color: red;
+            animation: ly20 10s linear 0s infinite normal;
+        }
+        ul li:nth-child(1){
+            left: 100px;
+            top: 100px;
+            animation: move 5s linear 0s 1 normal;
+        }
+        ul li:nth-child(2){
+            left: 240px;
+            top: 270px;
+            animation: move1 5s linear 0s 1 normal;
+        }
+        ul li:nth-child(3){
+            left: 100px;
+            top: 440px;
+            animation: move2 5s linear 0s 1 normal;
+        }
+        span:nth-child(1){
+         color: yellow;
+            animation: ly 0.1s linear 0s infinite normal;
+        }
+        span:nth-child(2){
+          color: purple;
+            animation: ly1 0.1s linear 0s infinite normal;
+        }
+        span:nth-child(3){
+           color: red;
+            animation: ly2 0.1s linear 0s infinite normal;
+        }
+        span:nth-child(4){
+          color:skyblue;
+            animation: ly3 0.1s linear 0s infinite normal;
+        }
+        span:nth-child(5){
+           color: tomato;
+            animation: ly4 0.1s linear 0s infinite normal;
+        }
+        span:nth-child(6){
+          color: orange;
+            animation: ly5 0.1s linear 0s infinite normal;
+        }
+        span:nth-child(7){
+          color: brown;
+            animation: ly6 0.1s linear 0s infinite normal;
+        }
+        span:nth-child(8){
+            color: fuchsia;
+            animation: ly7 0.1s linear 0s infinite normal;
+        }
+        span:nth-child(9){
+           color: darkorange;
+            animation: ly8 0.1s linear 0s infinite normal;
+        }
+        span:nth-child(10){
+           color: gold;
+            animation: ly9 0.1s linear 0s infinite normal;
+        }
+        @keyframes ly {
+            to{
+                color: yellow;
+            }
+            from{
+                color: fuchsia;
+            }
+        }
+        @keyframes ly1 {
+            to{
+                color: purple;
+            }
+            from{
+                color: fuchsia;
+            }
+        }
+        @keyframes ly2 {
+            to{
+                color: red;
+            }
+            from{
+                color: fuchsia;
+            }
+        }
+        @keyframes ly3 {
+            to{
+                color: skyblue;
+            }
+            from{
+                color: fuchsia;
+            }
+        }
+        @keyframes ly4 {
+            to{
+                color: lime;
+            }
+            from{
+                color: fuchsia;
+            }
+        }
+        @keyframes ly5 {
+            to{
+                color: orange;
+            }
+            from{
+                color: fuchsia;
+            }
+        }
+        @keyframes ly6 {
+            to{
+                color: brown;
+            }
+            from{
+                color: fuchsia;
+            }
+        }
+        @keyframes ly7 {
+            to{
+                color: fuchsia;
+            }
+            from{
+                color: darkblue;
+            }
+        }
+        @keyframes ly8 {
+            to{
+                color: darkorange;
+            }
+            from{
+                color: fuchsia;
+            }
+        }
+        @keyframes ly9 {
+            to{
+                color:gold;
+            }
+            from{
+                color: fuchsia;
+            }
+        }
+        @keyframes move {
+            from{
+                left: 600px;
+                top: 100px;
+                opacity: 0;
+            }
+            to{
+                left: 100px;
+                top: 100px;
+                opacity: 1;
+            }
+        }
+        @keyframes move1 {
+            from{
+                left: 600px;
+                top: 270px;
+                opacity: 0;
+            }
+            to{
+                left: 240px;
+                top: 270px;
+                opacity: 1;
+            }
+        }
+        @keyframes move2 {
+            from{
+                left: 600px;
+                top: 400px;
+                opacity: 0;
+            }
+            to{
+                left: 100px;
+                top: 440px;
+                opacity: 1;
+            }
+        }
+        @keyframes ly20 {
+           0%{
+                left: 80px;
+                top: 700px;
+                opacity: 1;
+            }
+            20%{
+                left: 200px;
+                top: 600px;
+                opacity: 0;
+            }
+            40%{
+                left: 400px;
+                top: 300px;
+                opacity: 1;
+            }
+            60%{
+                left: 700px;
+                top: 150px;
+                opacity: 0;
+            }
+            80%{
+                left: 750px;
+                top: 500px;
+                opacity: 1;
+            }
+            100%{
+                left: 650px;
+                top: 650px;
+                opacity: 0;
+            }
+        }
+        .box2:hover span{
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="box1">
+    <div class="box2">
+    <span>来</span>
+    <span>自</span>
+    <span>全</span>
+    <span>国</span>
+    <span>人</span>
+    <span>民</span>
+    <span>的</span>
+    <span>贺</span>
+    <span>电</span>
+    <span>！</span>
+    </div>
+    <ul>
+        <li><a href="book.html">一封小情书</a></li>
+        <li><a href="running.html">爱情小火车</a></li>
+        <li><a href="photo.html">那些小回忆</a></li>
+    </ul>
+    <p class="box3">❤</p>
+    <p class="box4">❤</p>
+</div>
+</body>
+</html>

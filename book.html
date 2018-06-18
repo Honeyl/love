@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>小情书</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            width: 900px;   /*定义界面的大小*/
+            height: 900px;
+            margin: 0 auto;
+            border: 1px solid black;
+            margin-top: 20px;
+            background-image: url("bg2.jpg");
+            background-size: cover;
+            overflow: hidden;
+        }
+        ul{
+            width: 900px;
+            height: 900px;
+            animation:move 5s linear 0s 1 normal ;
+            position: relative;
+        }
+        ul li{
+            width: 900px;
+            height: 70px;
+            position:relative;
+            left: 100px;
+            top: 50px;
+            text-align: left;
+            line-height: 70px;
+            font-size: 30px;
+            color:orange ;
+            font-family: 华文新魏;
+        }
+        span{
+            font-size: 50px;
+            color:red;
+        }
+        p{
+            width: 900px;
+            height: 100px;
+            position: absolute;
+            left: 700px;
+            top: 860px;
+            font-size: 30px;
+            color: yellow;
+            animation: ly 10s linear 0s 1 normal;
+            font-family: 华文新魏;
+        }
+        audio{
+            position: absolute;
+            top: 880px;
+            left:30px;
+            opacity: 0;
+        }
+        a{
+            width: 200px;
+            height: 100px;
+            position: absolute;
+            top: 850px;
+            left: 100px;
+            font-size: 30px;
+        }
+        a:link{
+            color: purple;
+        }
+        a:visited{
+            color: purple;
+        }
+        a:active{
+            color: yellow;
+        }
+        a:hover{
+            color: yellow;
+        }
+        a{
+            text-decoration: none;
+        }
+        @keyframes move {
+            from{
+                left: 1000px;
+            }
+            to{
+                left: 0px;
+            }
+        }
+        @keyframes ly {
+            from{
+                opacity: 0;
+            }
+            to{
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+<div>
+    <ul>
+        <li><span>那年</span>的夏天</li>
+        <li>你蹑手蹑脚的出现我面前</li>
+        <li>那年的秋天</li>
+        <li>你无声无息的融进我心里</li>
+        <li>从此，你便走进了我的生活</li>
+        <li>青春是一个昂贵的时间</li>
+        <li>我将它赋予你</li>
+        <li>从此，你便成了我生命的驻脚</li>
+        <li>我用笔尖诉写对你的相思</li>
+        <li>用心灵的电波传达对你的爱</li>
+        <li>从此，你便成了我爱的人</li>
+    </ul>
+<p>爱你的焱哥哥</p>
+    <audio src="mp1.mp3" loop="loop" autoplay="autoplay" controls="controls"></audio>
+    <a href="index.html">点我返回</a>
+</div>
+
+</body>
+</html>
